@@ -11,6 +11,9 @@ dotenv.config();
 const app=express();
 app.use(cors());
 app.use(express.json());//to parse incoming data
+app.listen(3000, function () {
+  console.log("server running at localhost:3000");
+});
 
 
 //connect the database using mongoose
